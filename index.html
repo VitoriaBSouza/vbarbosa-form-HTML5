@@ -8,7 +8,7 @@
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <script src="https://kit.fontawesome.com/35f1cece8a.js" crossorigin="anonymous"></script> 
             
-            <title>My Form</title>
+            <title>My Pyament Form</title>
         </head>
 
         <body>
@@ -27,17 +27,17 @@
                                 <div class="row">
                                     <div class="col-5">
                                         <label for="inputZip" class="form-label">Card#</label>
-                                        <input type="text" class="form-control" placeholder="XXXXXXXXXXXX" aria-label="amount">
+                                        <input type="tel" inputmode="numeric" maxlength="19" minlength="13" class="form-control" placeholder="XXXXXXXXXXXXXXXXXXXX" aria-label="card">
                                     </div>
                                     <div class="col-3">
                                         <label for="inputZip" class="form-label">CVC#</label>
-                                        <input type="text" class="form-control" placeholder="0000" aria-label="amount">
+                                        <input type="tel" maxlength="4" minlength="3" class="form-control" placeholder="0000" aria-label="cvc">
                                     </div>
                                     <div class="col-4">
                                         <label for="inputZip" class="form-label">Amount</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text">$</span>
-                                            <input type="text" class="form-control" aria-label="Cantidad (al dólar más cercano)">
+                                            <input type="tel" class="form-control" aria-label="amount">
                                         </div>
                                     </div>
                                 </div>
@@ -50,11 +50,47 @@
                                         <label for="inputZip" class="form-label">First Name</label>
                                         <input type="text" class="form-control" aria-label="Nombre">
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 p-3">
                                         <label for="inputCity" class="form-label">Ciudad</label>
                                         <input type="text" class="form-control" id="inputCity">
                                     </div>
-                                    <div class="col-6">FOP</div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                We accept:
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 p-3">
+                                                <div class="form-check form-check-inline">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="FOP1">
+                                                        <label class="form-check-label" for="inlineRadio1">
+                                                            <i class="fa-brands fa-cc-mastercard" style="font-size: 30px;"></i>
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="FOP2">
+                                                        <label class="form-check-label" for="inlineRadio2">
+                                                            <i class="fa-brands fa-cc-visa" style="font-size: 30px;"></i>
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="FOP3">
+                                                        <label class="form-check-label" for="inlineRadio3">
+                                                            <i class="fa-brands fa-cc-paypal" style="font-size: 30px;"></i>
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="FOP4">
+                                                        <label class="form-check-label" for="inlineRadio4">
+                                                            <i class="fa-brands fa-cc-diners-club" style="font-size: 30px;"></i>
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -65,16 +101,16 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="row">
-                                            <div class="col-6">
+                                            <div class="col-6 p-3">
                                                 <label for="inputZip" class="form-label">State</label>
-                                                <select class="form-select" aria-label="Default select example">
+                                                <select class="form-select" aria-label="state">
                                                     <option selected>Pick a state</option>
                                                     <option value="1">Barcelona</option>
                                                     <option value="2">Madrid</option>
                                                     <option value="3">Valencia</option>
                                                   </select>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-6 p-3">
                                                 <label for="inputZip" class="form-label">Postal Code</label>
                                                 <input type="text" class="form-control" id="inputZip">
                                             </div>
